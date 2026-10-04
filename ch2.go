@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println("hello world")
+	fmt.Println("Hello, world!")
 }
 
 // NOTES
@@ -29,4 +29,10 @@ func main() {
 // Floating-point types: Go has two floating point types, float32 & float64
 // Dividing a non-zero floating-point value by 0 produces a +inf or -inf
 //
-// Complex typesl Go has first-class support for complex numbers
+// Complex types: Go has first-class support for complex numbers
+//
+// STRINGS AND RUNES
+// The zero value for a string is an empty string
+// type rune means int32 just like byte means uint8, the type should be used to clarify intent
+// Go does not allow truthiness, converting from another type to bool. If you want to do that you must use comparison operators.
+//
