@@ -13,4 +13,4 @@ build: vet
 	go build
 
 clean:
-	rm ./hello_world
+	rm ./learning_go
