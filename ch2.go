@@ -5,11 +5,25 @@ import (
 )
 
 func main() {
-	var i int = 20
-	var f float64 = float64(i)
+	// var i int = 20
+	// var f float64 = float64(i)
+	//
+	// fmt.Println(i)
+	// fmt.Println(f)
+	//
+	// const value = 0
+	//
+	// i = value
+	// f= value
 
-	fmt.Println(i)
-	fmt.Println(f)
+	var (
+		b      byte  = 255
+		smallI int32 = 23000
+		bigI   int64 = 233333333333
+	)
+
+	fmt.Println(b+1, smallI+1, bigI+1)
+
 }
 
 // NOTES
