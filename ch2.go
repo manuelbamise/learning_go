@@ -5,7 +5,11 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, world!")
+	var i int = 20
+	var f float64 = float64(i)
+
+	fmt.Println(i)
+	fmt.Println(f)
 }
 
 // NOTES
@@ -35,4 +39,6 @@ func main() {
 // The zero value for a string is an empty string
 // type rune means int32 just like byte means uint8, the type should be used to clarify intent
 // Go does not allow truthiness, converting from another type to bool. If you want to do that you must use comparison operators.
+//
+// when declaring variable at the package level "var" should be used because := is not legal outside of functions
 //
