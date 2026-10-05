@@ -12,7 +12,9 @@ func main() {
 	//Multidimensional slice example
 	// var x = [][]int (slice of slices)
 
-	fmt.Println(len(x))
+	fmt.Println(x)
+	x = append(x, 14)
+	fmt.Println(x)
 
 }
 
@@ -22,3 +24,5 @@ func main() {
 //
 //Slices is better used over arrays beacause slices grow as needed(length is not part of the slice type)
 //
+//len is an in-built function used to ge tthe size of a slice or array"Hello, world!"
+//append is a built-in function used to grow slices
