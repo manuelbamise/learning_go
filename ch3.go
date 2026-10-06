@@ -5,14 +5,16 @@ import "fmt"
 func main() {
 	// Array example
 	// var x =  [3]int{21,23,23}
-	
+
 	//Slice example
-	var x = []int{32,23,43,23,24}
-	
+	var x = []int{32, 23, 43, 23, 24}
+	// var y = []int{34,5,4,86,88,35}
+
 	//Multidimensional slice example
 	// var x = [][]int (slice of slices)
 
 	fmt.Println(x)
+	// x = append(x, y...)
 	x = append(x, 14)
 	fmt.Println(x)
 
