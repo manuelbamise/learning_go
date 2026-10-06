@@ -21,23 +21,25 @@ func main() {
 	// fmt.Println(x, len(x), cap(x))
 
 	// creating a slice using make
-
-	// x := make([]int, 5)
+	//
+	// x := []string{"A","B","C","D"}
 	//
 	// fmt.Println(x, len(x), cap(x))
 	//
-	x := []string{"a", "b", "c", "d"}
-	y := x[:2]
-	z := x[1:]
-	fmt.Println("x:", x)
-	fmt.Println("y:", y)
-	fmt.Println("z:", z)
-	x[1] = "y"
-	y[0] = "x"
-	z[1] = "z"
-	fmt.Println("x:", x)
-	fmt.Println("y:", y)
-	fmt.Println("z:", z)
+	// y := x[:2]
+	//
+	// fmt.Println(y, len(y), cap(y))
+	// y = append(y,"E")
+	//
+	//
+	// fmt.Println("x:",x)
+	// fmt.Println("y:",y)
+	x := []string{ "a", "b", "c", "d"}
+
+	y := make([]string, 5)
+	num := copy(y,x)
+
+	fmt.Println(y,num)
 }
 
 // NOTES
@@ -54,3 +56,5 @@ func main() {
 //
 //Go is a call by value language. Everytime you pass a parameter to a function , GO
 //makes a copy of the value passed in.
+//
+// the copy command is used to copy the values from a source slice to a destination making the copied slice independent of the source
