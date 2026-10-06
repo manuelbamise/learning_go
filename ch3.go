@@ -22,10 +22,22 @@ func main() {
 
 	// creating a slice using make
 
-	x := make([]int, 5)
-
-	fmt.Println(x, len(x), cap(x))
-
+	// x := make([]int, 5)
+	//
+	// fmt.Println(x, len(x), cap(x))
+	//
+	x := []string{"a", "b", "c", "d"}
+	y := x[:2]
+	z := x[1:]
+	fmt.Println("x:", x)
+	fmt.Println("y:", y)
+	fmt.Println("z:", z)
+	x[1] = "y"
+	y[0] = "x"
+	z[1] = "z"
+	fmt.Println("x:", x)
+	fmt.Println("y:", y)
+	fmt.Println("z:", z)
 }
 
 // NOTES
