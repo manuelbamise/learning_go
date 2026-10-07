@@ -33,7 +33,7 @@ func main() {
 	// pArray := [4]int(pSlice)
 	x := "Hello there"
 
-	var s2 string = x[6:]
+	var s2  = x[6:]
 
 	fmt.Println(len(x),x)
 	fmt.Println(len(s2), s2)
@@ -60,3 +60,8 @@ func main() {
 //
 // in GO source code is always written in UTF-8
 // A single value can be extracted from a string just like an array or a slice
+// though Go allows slicing and indexing strings, it should only be done when each character takes up only one byte
+//
+// the map function is used to create key value pairs.
+// it maps the keyType to the valuetype to create a composite type.
+// the zero value for a map is nil with length 0
