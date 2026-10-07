@@ -31,12 +31,23 @@ func main() {
 	// converting a slice to an array
 	// pSlice := []int{2,4,5,6,6}
 	// pArray := [4]int(pSlice)
-	x := "Hello there"
 
-	var s2  = x[6:]
+	// nMap := map[int]string{
+	// 	1: "Hello",
+	// 	2:"maybe",
+	// }
+	//
+	// fmt.Println(nMap)
+	// // fmt.Println(len(nMap))
+	//
 
-	fmt.Println(len(x),x)
-	fmt.Println(len(s2), s2)
+	m := map[string]int{
+		"hello": 5,
+		"world": 0,
+	}
+
+	fmt.Println(m)
+
 }
 
 // NOTES
@@ -65,3 +76,4 @@ func main() {
 // the map function is used to create key value pairs.
 // it maps the keyType to the valuetype to create a composite type.
 // the zero value for a map is nil with length 0
+// a slice or map cannot be used as the key for a map
