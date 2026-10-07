@@ -22,19 +22,12 @@ func main() {
 
 	// creating a slice using make
 	//
-	// x := []string{"A","B","C","D"}
+	// x := make([]string, 0,5)
 	//
-	// fmt.Println(x, len(x), cap(x))
-	//
-	// y := x[:2]
-	//
-	// fmt.Println(y, len(y), cap(y))
-	// y = append(y,"E")
-	//
-	//
-	// fmt.Println("x:",x)
-	// fmt.Println("y:",y)
-	x := []string{ "a", "b", "c", "d"}
+	// converting an array to a slice
+	// nArray := [4]int{2,3,4,5}
+	// nSlice := nArray[:]
+x := []string{ "a", "b", "c", "d"}
 
 	y := make([]string, 5)
 	num := copy(y,x)
@@ -58,3 +51,6 @@ func main() {
 //makes a copy of the value passed in.
 //
 // the copy command is used to copy the values from a source slice to a destination making the copied slice independent of the source
+// an array can be converted into a slice using the [:]
+// taking a slice from an array shares the same memory from the source array as taking a slice from a slice. i.e changes to the source changes the destination and vice-versa
+//
