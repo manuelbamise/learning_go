@@ -27,12 +27,16 @@ func main() {
 	// converting an array to a slice
 	// nArray := [4]int{2,3,4,5}
 	// nSlice := nArray[:]
-x := []string{ "a", "b", "c", "d"}
+	//
+	// converting a slice to an array
+	// pSlice := []int{2,4,5,6,6}
+	// pArray := [4]int(pSlice)
+	x := "Hello there"
 
-	y := make([]string, 5)
-	num := copy(y,x)
+	var s2 string = x[6:]
 
-	fmt.Println(y,num)
+	fmt.Println(len(x),x)
+	fmt.Println(len(s2), s2)
 }
 
 // NOTES
@@ -54,3 +58,5 @@ x := []string{ "a", "b", "c", "d"}
 // an array can be converted into a slice using the [:]
 // taking a slice from an array shares the same memory from the source array as taking a slice from a slice. i.e changes to the source changes the destination and vice-versa
 //
+// in GO source code is always written in UTF-8
+// A single value can be extracted from a string just like an array or a slice
