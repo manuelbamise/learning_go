@@ -21,9 +21,9 @@ func main() {
 	// fmt.Println(x, len(x), cap(x))
 
 	// creating a slice using make
-	//
+
 	// x := make([]string, 0,5)
-	//
+	
 	// converting an array to a slice
 	// nArray := [4]int{2,3,4,5}
 	// nSlice := nArray[:]
@@ -58,12 +58,11 @@ func main() {
 //the zero value for a slice is nil
 //Each element assigned in a slice is assigned consecutive memory locations, the length of a slice is the number of consecutive memory locations that have been assigned a value
 //
+// len is an in-built function used to ge tthe size of a slice or array"Hello, world!"
+// append is a built-in function used to grow slices
 //
-//len is an in-built function used to ge tthe size of a slice or array"Hello, world!"
-//append is a built-in function used to grow slices
-//
-//Go is a call by value language. Everytime you pass a parameter to a function , GO
-//makes a copy of the value passed in.
+// Go is a call by value language. Everytime you pass a parameter to a function , GO
+// makes a copy of the value passed in.
 //
 // the copy command is used to copy the values from a source slice to a destination making the copied slice independent of the source
 // an array can be converted into a slice using the [:]
