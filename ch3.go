@@ -49,19 +49,28 @@ func main() {
 	// }
 	//
 	//defining an anonymous struct
-	var boxOfCrayons struct{
-		parcelId string
-		orderPLacer string
-		phoneNumber string
-	}
+	// var boxOfCrayons struct{
+	// 	parcelId string
+	// 	orderPLacer string
+	// 	phoneNumber string
+	// }
+	//
+	// boxOfCrayons.orderPLacer = "Damian Leedman"
+	// boxOfCrayons.parcelId = "0x2842bb342"
+	// boxOfCrayons.phoneNumber = "092448238"
+	//
 
-	boxOfCrayons.orderPLacer = "Damian Leedman"
-	boxOfCrayons.parcelId = "0x2842bb342"
-	boxOfCrayons.phoneNumber = "092448238"
 
+	greetings := []string{"Hello", "Hola", "नमस्कार", "こんにちは","Привіт"}
 
+	subsliceOne := greetings[:2]
+	subsliceTwo := greetings[1:4]
+	subsliceThree := greetings[3:]
 
-	fmt.Println(boxOfCrayons)
+	fmt.Println(greetings)
+	fmt.Println(subsliceOne)
+	fmt.Println(subsliceTwo)
+	fmt.Println(subsliceThree)
 
 }
 
