@@ -23,7 +23,7 @@ func main() {
 	// creating a slice using make
 
 	// x := make([]string, 0,5)
-	
+
 	// converting an array to a slice
 	// nArray := [4]int{2,3,4,5}
 	// nSlice := nArray[:]
@@ -60,17 +60,37 @@ func main() {
 	// boxOfCrayons.phoneNumber = "092448238"
 	//
 
+	//
+	// greetings := []string{"Hello", "Hola", "नमस्कार", "こんにちは","Привіт"}
+	//
+	// subsliceOne := greetings[:2]
+	// subsliceTwo := greetings[1:4]
+	// subsliceThree := greetings[3:]
+	//
+	// fmt.Println(greetings)
+	// fmt.Println(subsliceOne)
+	// fmt.Println(subsliceTwo)
+	// fmt.Println(subsliceThree)
+	//
 
-	greetings := []string{"Hello", "Hola", "नमस्कार", "こんにちは","Привіт"}
+	type Employee struct {
+		firstName string
+		lastName  string
+		id        int
+	}
 
-	subsliceOne := greetings[:2]
-	subsliceTwo := greetings[1:4]
-	subsliceThree := greetings[3:]
+	employeeOne := Employee{id: 1}
 
-	fmt.Println(greetings)
-	fmt.Println(subsliceOne)
-	fmt.Println(subsliceTwo)
-	fmt.Println(subsliceThree)
+	employeeTwo := Employee{firstName: "Julius", lastName: "Leedman"}
+
+	var employeeThree Employee
+	employeeThree.firstName = "Lewis"
+	employeeThree.lastName = "Deedman"
+	employeeThree.id = 3
+
+	fmt.Println(employeeOne)
+	fmt.Println(employeeTwo)
+	fmt.Println(employeeThree)
 
 }
 
