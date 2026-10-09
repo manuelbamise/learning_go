@@ -41,14 +41,19 @@ func main() {
 	// // fmt.Println(len(nMap))
 	//
 	// defining a struct
-	
-	type parcel struct{
-			parcelId string
-			orderPLacer string
-			phoneNumber string
+	//
+	// type parcel struct{
+	// 		parcelId string
+	// 		orderPLacer string
+	// 		phoneNumber string
+	// }
+	//
+	//defining an anonymous struct
+	var boxOfCrayons struct{
+		parcelId string
+		orderPLacer string
+		phoneNumber string
 	}
-
-	var boxOfCrayons parcel
 
 	boxOfCrayons.orderPLacer = "Damian Leedman"
 	boxOfCrayons.parcelId = "0x2842bb342"
@@ -88,3 +93,4 @@ func main() {
 // a slice or map cannot be used as the key for a map
 //
 // An empty struct uses zero bytes, while a boolean uses one
+// An anonymous struct is a struct used on a variable directly without the struct type having a name
