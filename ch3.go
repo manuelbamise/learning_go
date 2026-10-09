@@ -40,13 +40,23 @@ func main() {
 	// fmt.Println(nMap)
 	// // fmt.Println(len(nMap))
 	//
-
-	m := map[string]int{
-		"hello": 5,
-		"world": 0,
+	// defining a struct
+	
+	type parcel struct{
+			parcelId string
+			orderPLacer string
+			phoneNumber string
 	}
 
-	fmt.Println(m)
+	var boxOfCrayons parcel
+
+	boxOfCrayons.orderPLacer = "Damian Leedman"
+	boxOfCrayons.parcelId = "0x2842bb342"
+	boxOfCrayons.phoneNumber = "092448238"
+
+
+
+	fmt.Println(boxOfCrayons)
 
 }
 
@@ -76,3 +86,5 @@ func main() {
 // it maps the keyType to the valuetype to create a composite type.
 // the zero value for a map is nil with length 0
 // a slice or map cannot be used as the key for a map
+//
+// An empty struct uses zero bytes, while a boolean uses one
