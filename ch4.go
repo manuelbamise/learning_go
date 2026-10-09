@@ -16,4 +16,4 @@ func main() {
 // NOTES
 // Each place where a variable declaration occurs is called a block
 // A shadowing variable is a variable that has the same name as a variable in a containing block
-//
+// Just tips to be careful when naming things the same as identifiers in the universal block
