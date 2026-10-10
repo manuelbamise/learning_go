@@ -26,13 +26,23 @@ func main() {
 	// 	fmt.Println(i)
 	// }
 	// condition-only for statement
-	i := 1
-	for i < 100{
-		fmt.Println(i)
-		i = i +1
-	}
+	// i := 1
+	// for i < 10{
+	// 	fmt.Println(i)
+	// 	i = i * 2
+	// }
+	//
+	// infinite for loop
+	// for {
+	// 	fmt.Println("Hello")
+	// 	}
+	newSlice := []int{10,28,22,18,50,39}
 
-	fmt.Println("Hello, world!")
+	fmt.Println(newSlice)
+
+	for _,v := range newSlice {
+		fmt.Println(v)
+	}
 }
 
 // NOTES
@@ -47,3 +57,6 @@ func main() {
 // condition-only for
 // infinite for
 // for-range
+//
+// GO has a break keyword to break out of an infinite loop
+//
