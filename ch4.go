@@ -1,7 +1,7 @@
 package main
 
-import ("fmt"
-			// "math/rand"
+import (
+	"fmt"
 )
 
 func main() {
@@ -36,14 +36,19 @@ func main() {
 	// for {
 	// 	fmt.Println("Hello")
 	// 	}
-	newSlice := []int{10,28,22,18,50,39}
+	// newSlice := []int{10,28,22,18,50,39}
+	//
+	// fmt.Println(newSlice)
+	//
+	// for _,v := range newSlice {
+	// 	fmt.Println(v)
+	// }
 
-	fmt.Println(newSlice)
 
-	for _,v := range newSlice {
-		fmt.Println(v)
-	}
+	fmt.Println("Done!")
+
 }
+
 
 // NOTES
 // Each place where a variable declaration occurs is called a block
