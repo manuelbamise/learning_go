@@ -43,12 +43,13 @@ func main() {
 	// for _,v := range newSlice {
 	// 	fmt.Println(v)
 	// }
-
+	for i := range 200 {
+		fmt.Println("This is ", i)
+	}
 
 	fmt.Println("Done!")
 
 }
-
 
 // NOTES
 // Each place where a variable declaration occurs is called a block
