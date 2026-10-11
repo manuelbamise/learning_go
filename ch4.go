@@ -45,11 +45,15 @@ func main() {
 	// // }
 	// samples := []string{"Hello", "apple_n!"}
 	//
-	// for _, sample := range samples {
-	// 	for i, v := range sample {
-	// 		fmt.Println(i, v, string(v))
+	// outer:
+	// 	for _, sample := range samples {
+	// 		for i, v := range sample {
+	// 			fmt.Println(i, v, string(v))
+	// 			if v == 'l' {
+	// 				continue outer
+	// 			}
+	// 		}
 	// 	}
-	// }
 
 	fmt.Println("Hello, world!")
 
@@ -69,4 +73,8 @@ func main() {
 // for-range
 //
 // GO has a break keyword to break out of an infinite loop
+// for-ranged values are copies of the original.., modifying the variable in the loop will not change the value of the compound type
+// there are labels in go used to change the control flow of code
+//
+// Most of the time, the for-range format will be used
 //
