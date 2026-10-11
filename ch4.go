@@ -77,4 +77,6 @@ func main() {
 // there are labels in go used to change the control flow of code
 //
 // Most of the time, the for-range format will be used
+// the bset time to use the complete C-style for loop is when iteration is not starting from the first to last element in the compound type.
+//
 //
