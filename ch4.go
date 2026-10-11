@@ -42,12 +42,16 @@ func main() {
 	//
 	// for _,v := range newSlice {
 	// 	fmt.Println(v)
+	// // }
+	// samples := []string{"Hello", "apple_n!"}
+	//
+	// for _, sample := range samples {
+	// 	for i, v := range sample {
+	// 		fmt.Println(i, v, string(v))
+	// 	}
 	// }
-	for i := range 200 {
-		fmt.Println("This is ", i)
-	}
 
-	fmt.Println("Done!")
+	fmt.Println("Hello, world!")
 
 }
 
